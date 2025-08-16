@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 credential = DefaultAzureCredential()
 subscription_id = os.environ["AZURE_SUBSCRIPTION_ID"]
-tenant_id = "0f510a1b-c5e3-4209-8b58-1312c3193849"
+tenant_id = os.environ["AZURE_TENANT_ID"]
 resource_client = ResourceManagementClient(credential, subscription_id)
 
 
